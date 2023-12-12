@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.docs.controller.InvoiceController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="200.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="200.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="Пользователь:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="userField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label text="Номер:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="numberField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label text="Валюта:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="currencyField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Label text="Курс:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="rateField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Label text="Товар:" GridPane.columnIndex="0" GridPane.rowIndex="4">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="productField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <Label text="Количество:" GridPane.columnIndex="0" GridPane.rowIndex="5">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="quantityField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+        <Label text="Сумма:" GridPane.columnIndex="0" GridPane.rowIndex="6">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="amountField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    </children>
+</GridPane>

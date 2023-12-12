@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<VBox spacing="10" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.docs.controller.MainController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+    <children>
+        <HBox spacing="40">
+            <VBox>
+                <Button text="Накладная" onAction="#createInvoice" styleClass="button-create"/>
+                <Button text="Платёжка" onAction="#createPaymentOrder" styleClass="button-create"/>
+                <Button text="Заявка на оплату" onAction="#createPaymentRequest" styleClass="button-create"/>
+                <Button text="Сохранить" onAction="#saveDocument" styleClass="button"/>
+                <Button text="Загрузить" onAction="#loadDocument" styleClass="button"/>
+                <Button text="Просмотр" onAction="#showDocumentProperties" styleClass="button"/>
+                <Button text="Удалить" onAction="#deleteDocument" styleClass="button-delete"/>
+                <Button text="Выход"  styleClass="button-delete"/>
+            </VBox>
+            <ListView fx:id="listView" styleClass="list-view"/>
+        </HBox>
+    </children>
+</VBox>

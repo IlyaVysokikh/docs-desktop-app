@@ -1,0 +1,52 @@
+VBox {
+    -fx-spacing: 10px; /* Установите желаемое расстояние между кнопками */
+     -fx-alignment: CENTER_LEFT;
+}
+
+.HBox {
+    -fx-padding: 0 0 10px 0; /* Установите отступы (в данном случае, справа 10px) */
+}
+
+.button, .button-create, .button-delete {
+    -fx-min-width: 200px; /* Установите желаемую минимальную ширину кнопок */
+    -fx-background-insets: 5px;
+    -fx-font-size: 20px;
+    -fx-padding: 5px;
+}
+
+.button {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white;
+    -fx-background-insets: 5px;
+    -fx-font-size: 20px;
+    -fx-border-color: #2E8B57; /* Darker Green */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, #228B22, 5, 0, 0, 0);
+}
+
+.button:hover {
+    -fx-background-color: #ffffff;
+     -fx-text-fill: #4CAF50;
+}
+
+.button-delete {
+    -fx-background-color: #FF0000; /* Red */
+    -fx-border-color: #8B0000; /* Darker Red */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, #8B0000, 5, 0, 0, 0);
+}
+.button-delete:hover {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #FF0000;
+}
+
+.list-view {
+    -fx-background-color: #EAEAEA; /* Light Gray */
+    -fx-border-color: #CCCCCC; /* Lighter Gray */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+
