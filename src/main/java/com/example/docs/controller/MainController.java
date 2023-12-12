@@ -258,4 +258,18 @@ public class MainController {
         alert.setContentText(contentText);
         alert.showAndWait();
     }
+
+    @FXML
+    private void close(){
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Закрытие приложения");
+        alert.setHeaderText(null);
+        alert.setContentText("Вы уверены, что хотите закрыть приложение?");
+
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.isPresent() && result.get() == ButtonType.OK) {
+            Stage stage = (Stage) listView.getScene().getWindow();
+            stage.close();
+        }
+    }
 }

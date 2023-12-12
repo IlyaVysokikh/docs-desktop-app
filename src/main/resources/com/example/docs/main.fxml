@@ -22,7 +22,7 @@
                 <Button text="Загрузить" onAction="#loadDocument" styleClass="button"/>
                 <Button text="Просмотр" onAction="#showDocumentProperties" styleClass="button"/>
                 <Button text="Удалить" onAction="#deleteDocument" styleClass="button-delete"/>
-                <Button text="Выход"  styleClass="button-delete"/>
+                <Button text="Выход"  onAction="#close" styleClass="button-delete"/>
             </VBox>
             <ListView fx:id="listView" styleClass="list-view"/>
         </HBox>
